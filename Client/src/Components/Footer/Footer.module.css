@@ -1,0 +1,64 @@
+.containerLight {
+    background-color: #313131;
+    padding: 4% 0;
+    text-align: center;
+    width: 100vw;
+  }
+  
+  .containerDark {
+    background-color: #f7f7f7;
+    padding: 4% 0;
+    text-align: center;
+    width: 100vw;
+  }
+
+.footerContent {
+    display: flex;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  
+  .aboutMeContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: left;
+  }
+  
+  .aboutMeContainer h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #f7f7f7;
+  }
+
+  .aboutMeContainerDark h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  
+  .aboutMeContainer p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #c0c0c0;
+    max-width: 400px;
+  }
+
+  .aboutMeContainerDark p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #313131;
+    max-width: 400px;
+  }
+
+  .textContainer p {
+    font-size: 14px;
+    color: #c0c0c0;
+  }
+
+  .textContainerDark p {
+    font-size: 14px;
+    color: #000000;
+  }

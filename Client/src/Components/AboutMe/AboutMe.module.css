@@ -1,0 +1,194 @@
+.containerLight {
+    background-color: #f7f7f7;
+    padding: 4% 0;
+    text-align: center;
+    width: 100vw;
+  }
+  
+  .containerDark {
+    background-color: #313131;
+    padding: 4% 0;
+    text-align: center;
+    width: 100vw;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .titleDark{
+    color: #f1f1f1;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    margin-top: 3%;
+    max-width: 1200px;
+  }
+  
+  .paragraph {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+    max-width: 550px;
+    font-size: 19px;
+  }
+
+  .paragraphDark{
+    color: #c0c0c0;
+  }
+
+  .paragraph p {
+    margin-top: 9%;
+  }
+
+  .paragraph a {
+    margin-top: 8%;
+  }
+
+  .paragraph span {
+    font-weight: bold;
+    color: #404040;
+  }
+
+  .paragraphDark span {
+    color: #f1f1f1;
+  }
+
+  .contactButton {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 2px 4px,rgba(0, 0, 0, 0.15) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 60px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 20px;
+    margin-top: 8%;
+    transition: transform 0.5s;
+   }
+   
+   .contactButton:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+   }
+   
+   .contactButton:hover {
+    box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px, rgba(45, 35, 66, 0.2) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-4px);
+   }
+   
+   .contactButton:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+   }
+  
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-right: 50px;
+    max-width: 550px;
+  }
+  
+  .Tecs {
+    grid-column: span 3;
+    text-align: center;
+    font-size: 24px;
+  }
+  .TecsDark {
+    color: #f1f1f1;
+  }
+  .skillItem {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s;
+  }
+  .skillItemDark {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  }
+  .skillItem:hover {
+    transform: translateY(-5px);
+  }
+  
+  .skillItem::before {
+    content: attr(data-skill-name);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%); 
+    opacity: 0;
+    background-color: #313131;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+  }
+  .skillItemDark::before {
+    background-color: #f7f7f7;
+    color: #313131;
+  }
+  
+  .skillItem:hover::before {
+    opacity: 1;
+  }
+  
+  .skillItem img {
+    width: 60%;
+    height: 60%;
+  }
+
+  .JavaScript {
+    border-radius: 20%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .paragraph {
+      text-align: center;
+      padding-right: 0;
+    }
+  
+    .skills {
+      margin-top: 20px;
+    }
+  
+    .skillItem {
+      margin: 10px 0;
+    }
+  }

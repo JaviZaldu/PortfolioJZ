@@ -1,0 +1,308 @@
+.containerLight {
+  background-color: #f7f7f7;
+  padding: 4% 0;
+  text-align: center;
+  width: 100vw;
+}
+
+.containerDark {
+  background-color: #313131;
+  padding: 4% 0;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.titleDark {
+  color: #f1f1f1;
+}
+
+.proyectos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 4%;
+  max-width: 80%;
+}
+
+.proyecto {
+  width: 70%;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: 1%;
+  border-radius: 8px;
+  box-shadow: -1px 4px 6px rgba(0, 0, 0, 0.5);
+}
+.proyectoDark {
+  box-shadow: -1px 2px 6px rgb(255, 255, 255);
+}
+
+.proyectoInfo {
+  flex: 1;
+}
+
+.proyecto h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.proyectoDark h3 {
+  color: #f1f1f1;
+}
+
+.proyecto p {
+  margin-bottom: 10%;
+  margin-left: 10px;
+  text-align: left;
+  padding: 10px;
+}
+.proyectoDark p {
+  color: #c0c0c0;
+}
+
+.proyectoImagen {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ImgProject {
+  max-width: 90%;
+  border-radius: 8px;
+  box-shadow: -1px 4px 6px rgba(0, 0, 0, 0.5);
+}
+.ImgProjectDark {
+  box-shadow: -1px 4px 6px rgb(255, 255, 255);
+}
+
+.tecnologias {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  justify-content: flex-start;
+  max-width: 90%;
+  align-items: center;
+}
+
+.tecnologias span {
+  background-color: #aaaaaa3e;
+  box-shadow: -1px 4px 4px rgba(0, 0, 0, 0.5);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.tecnologiasDark span {
+  background-color: #f7f7f7;
+  box-shadow: 0 0px 3px rgb(255, 255, 255);
+}
+
+a {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.botonContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Botonlink {
+  display: flex;
+  place-items: center;
+  padding: 0.5em;
+  cursor: pointer;
+  transition: transform 0.5s;
+  width: 12%;
+  background-color: transparent;
+  border: none;
+}
+.BotonlinkDark {
+  fill: #f7f7f7;
+}
+
+.Botonlink:hover {
+  transform: translateY(0.5em);
+}
+
+.Botonlink svg {
+  transition: transform 0.5s;
+}
+
+.Botonlink:hover svg {
+  transform: scale(0.9);
+  fill: #4d4d4d;
+}
+
+.BotonlinkDark:hover svg {
+  fill: #80acfd;
+}
+
+.verMasButton {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 2px 4px,rgba(0, 0, 0, 0.15) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 40px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 1%;
+  transition: transform 0.5s;
+ }
+ 
+ .verMasButton:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+ }
+ 
+ .verMasButton:hover {
+  box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px, rgba(45, 35, 66, 0.2) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-4px);
+ }
+ 
+ .verMasButton:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+ }
+
+
+ @media screen and (max-width: 1600px) {
+  .proyecto {
+    width: 90%;
+    margin-bottom: 30px;
+    margin-top: 20px;   
+    padding: 1%;
+  }
+}
+ @media screen and (max-width: 1300px) {
+  .proyecto h3 {
+    font-size: 18px;
+  }
+  
+  .proyecto {
+    width: 95%;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+
+  .proyecto p {
+    margin-bottom: 5%;
+    margin-left: 10px;
+    text-align: left;
+    padding: 10px;
+    font-size: 15px;
+  }
+  
+  .ImgProject {
+    max-width: 80%;
+  }
+  
+  .tecnologias {
+    margin-top: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    max-width: 80%;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  .proyecto {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 20px;   
+    padding: 1%;
+  }
+  .proyecto h3 {
+    font-size: 16px;
+  }
+
+  .proyecto p {
+    margin-bottom: 1%;
+    margin-left: 10px;
+    text-align: left;
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .tecnologias {
+    margin-top: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .proyecto {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .proyecto h3 {
+    order: 1;
+  }
+
+  .proyectoImagen {
+    order: 2;
+    margin-top: 5%;
+  }
+
+  .proyecto p {
+    order: 3;
+    max-width: 500px;
+  }
+
+  .tecnologias {
+    order: 4;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .Botonlink {
+    order: 5;
+    margin-top: 20px;
+    width: 10%;
+  }
+}
+@media screen and (max-width: 480px) {
+  
+}

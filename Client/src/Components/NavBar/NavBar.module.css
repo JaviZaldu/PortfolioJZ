@@ -1,0 +1,124 @@
+.navbar {
+  background-color: #f7f7f7;
+  color: #000000; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  width: 100vw;
+  transition: background-color 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.fixedNavbar {
+  background-color: #f7f7f7;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.darkNavbar {
+  background-color: #313131;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-left: 1%;
+}
+
+.sections ul {
+  list-style: none;
+  display: flex;
+}
+
+.sections ul li {
+  margin-right: 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.darkSections ul li {
+  color: white;
+}
+
+.Theme {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.Idioma {
+  margin-left: 30px;
+  margin-right: 40px;
+}
+
+.Idioma button {
+  font-size: 20px;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.darkButton {
+  color: #ffffff;
+}
+
+.lightButton {
+  color: #000000;
+}
+
+.switch {
+  display: block;
+  --width-of-switch: 3.5em;
+  --height-of-switch: 2em;
+  --size-of-icon: 1.4em;
+  --slider-offset: 0.3em;
+  position: relative;
+  width: var(--width-of-switch);
+  height: var(--height-of-switch);
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f4f4f5;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: var(--size-of-icon,1.4em);
+  width: var(--size-of-icon,1.4em);
+  border-radius: 20px;
+  left: var(--slider-offset,0.3em);
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(40deg, #ff000d, #ffae00 70%);
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #303136;
+}
+
+input:checked + .slider:before {
+  left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
+  background: #303136;
+  box-shadow: inset -3px -2px 5px -2px #06024d, inset -10px -4px 0 0 #179bed;
+}

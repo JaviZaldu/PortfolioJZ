@@ -1,0 +1,196 @@
+.containerLight {
+    background-color: #f7f7f7;
+    padding: 4% 0;
+    text-align: center;
+    width: 100vw;
+  }
+  
+  .containerDark {
+    background-color: #313131;
+    padding: 4% 0;
+    text-align: center;
+    width: 100vw;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .titleDark {
+    color: #f1f1f1;
+  }
+  
+  .formContainer {
+    max-width: 900px;
+    padding: 40px;
+    border: 5px solid #f1f1f166;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 50vh;
+    margin-top: 5%;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #bebebe;
+  }
+
+  .formContainerDark {
+    max-width: 900px;
+    padding: 40px;
+    border: 5px solid #f1f1f166;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 50vh;
+    margin-top: 5%;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #515151,
+             -15px -15px 30px #515151;
+  }
+
+  .form{
+    width: 800px;
+  }
+  
+  .heading {
+    display: block;
+    color: #313131;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 27px;
+    text-align: left;
+  }
+  
+  .input {
+    color: #313131;
+    width: 100%;
+    background-color: #b2b2b2;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    border-left: 1px solid transparent;
+  }
+  
+  .input:focus {
+    border-left: 5px solid #313131;
+  }
+  
+  .textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    background-color: #b2b2b2;
+    color: #313131;
+    font-weight: 500;
+    font-size: 17px;
+    resize: none;
+    max-height: 150px;
+    margin-bottom: 20px;
+    border-left: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .textarea:focus {
+    border-left: 5px solid #313131;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .espacio {
+    flex-basis: 60%;
+  }
+  
+  .sendButton {
+    flex-basis: 20%;
+    background: #313131ce;
+    padding: 10px;
+    color: #f7f7f7;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 7px;
+  }
+  
+  .sendButton:hover {
+    background: #b2b2b2;
+    color: #313131;
+  }
+  
+  .resetButtonContainer {
+    flex-basis: 20%;
+  }
+  .resetButton {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    color: #f7f7f7;
+    font-weight: bold;
+    background: #313131ce;
+    border-radius: 7px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .resetButton:hover {
+    background: #b2b2b2;
+    color: #313131;
+  }
+  
+
+  @media screen and (max-width: 1200px) {
+    .formContainer {
+      max-width: 800px;
+      padding: 35px;
+    }
+    .form{
+      width: 700px;
+    }
+  }
+
+
+
+  @media screen and (max-width: 1000px) {
+    .formContainer {
+      max-width: 600px;
+      padding: 30px;
+    }
+    .form{
+      width: 500px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .formContainer {
+      max-width: 500px;
+      padding: 25px;
+    }
+    .form{
+      width: 450px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .formContainer {
+      max-width: 300px;
+      padding: 20px;
+    }
+    .form{
+      width: 250px;
+    }
+  }
