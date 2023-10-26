@@ -152,7 +152,10 @@
     color: #313131;
   }
   
-
+  .error{
+    color: red;
+  }
+  
   @media screen and (max-width: 1200px) {
     .formContainer {
       max-width: 800px;

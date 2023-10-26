@@ -19,6 +19,14 @@
   .titleDark{
     color: #f1f1f1;
   }
+
+  .title2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .title2Dark{
+    color: #f1f1f1;
+  }
   
   .content {
     display: flex;
@@ -109,7 +117,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
-    margin-right: 50px;
     max-width: 550px;
   }
   
@@ -172,23 +179,194 @@
   .JavaScript {
     border-radius: 20%;
   }
-  
-  @media screen and (max-width: 768px) {
+
+
+
+  @media screen and (max-width: 1350px) {
     .content {
+      max-width: 1000px;
+    }
+    .paragraph {
+      flex: 1;
+      text-align: left;
+      padding-right: 20px;
+      max-width: 500px;
+      font-size: 18px;
+    }
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 35px;
+      margin-right: 0px;
+      max-width: 500px;
+    }
+
+    .skillItem {
+      width: 90px;
+      height: 90px;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .title{
+      margin-top: 5%;
+    }
+    .content {
+      max-width: 900px;
+    }
+    .paragraph {
+      flex: 1;
+      text-align: left;
+      padding-right: 20px;
+      max-width: 450px;
+      font-size: 18px;
+    }
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 35px;
+      max-width: 450px;
+
+    }
+
+    .skillItem {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+
+  @media screen and (max-width: 1000px) {
+    .title{
+      margin-top: 7%;
+    }
+    .content {
+      max-width: 1000px;
       flex-direction: column;
       align-items: center;
     }
-  
     .paragraph {
-      text-align: center;
-      padding-right: 0;
+      flex: 1;
+      text-align: left;
+      max-width: 650px;
+      font-size: 18px;
+      padding-right: 0px;
     }
-  
     .skills {
-      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 35px;
+      padding-top: 10%;
+      max-width: 600px;
+      margin-right: 0px;
     }
-  
+
     .skillItem {
-      margin: 10px 0;
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .title{
+      margin-top: 10%;
+    }
+    .content {
+      max-width: 650px;
+      flex-direction: column;
+      align-items: center;
+    }
+    .paragraph {
+      flex: 1;
+      text-align: left;
+      max-width: 500px;
+      font-size: 18px;
+    }
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 35px;
+      padding-top: 10%;
+      max-width: 550px;
+    }
+
+    .skillItem {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .title{
+      margin-top: 20%;
+    }
+    .content {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      padding-left: 8%;
+      padding-right: 8%;
+    }
+    .paragraph {
+      flex: 1;
+      text-align: left;
+      font-size: 15px;
+    }
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      padding-top: 10%;
+    }
+
+    .skillItem {
+      width: 80px;
+      height: 80px;
+    }
+    .contactButton{
+      height: 50px;
+      padding-left: 25px;
+      padding-right: 25px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+
+
+  @media screen and (max-width: 400px) {
+    .title{
+      margin-top: 30%;
+    }
+    .content {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+    .paragraph {
+      flex: 1;
+      text-align: left;
+      font-size: 14px;
+    }
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 27px;
+      padding-top: 10%;
+    }
+
+    .skillItem {
+      width: 60px;
+      height: 60px;
+    }
+    .contactButton{
+      height: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 17px;
+      font-weight: bold;
     }
   }

@@ -77,10 +77,9 @@ function Navbar() {
   return (
     <div className={`${styles.navbar} ${navbarFixed ? styles.fixedNavbar : ''} ${temaClaro ? '' : styles.darkNavbar}`}>
       
-      <img className={styles.logo} src={logoImage} alt="logo" />
+      <img className={styles.logo} style={{ marginRight: 'auto' }} src={logoImage} alt="logo" />
 
       <div className={`${styles.sections} ${temaClaro ? '' : styles.darkSections}`}>
-        <ul>
           {idioma === 'ES' && (
             <ul>
               <li onClick={scrollToInicio}>Inicio</li>
@@ -97,9 +96,8 @@ function Navbar() {
               <li onClick={scrollToContacto}>Contact</li>
             </ul>
           )}
-        </ul>
       </div>
-      <div className={styles.Theme}>
+      <div className={styles.Theme} style={{ marginLeft: 'auto' }}>
         <div>
           <label className={styles.switch}>
             <input type="checkbox" onChange={handleTemaChange} checked={!temaClaro} />

@@ -36,7 +36,7 @@ function AboutMe() {
             </div>
             <div className={styles.content}>   
                 <div className={`${styles.paragraph} ${temaClaro ? '' : styles.paragraphDark}`}>
-                    <div className={`${styles.title} ${temaClaro ? '' : styles.titleDark}`}>
+                    <div className={`${styles.title2} ${temaClaro ? '' : styles.title2Dark}`}>
                         {idioma === 'ES' && <h3>Conóceme!</h3>}
                         {idioma === 'EN' && <h3>Get to know me!</h3>}
                     </div>

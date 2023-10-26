@@ -40,48 +40,113 @@
     font-size: 20px;
     color: #c0c0c0;
 }
-
-   @media screen and (max-width: 850px) {
-    .textLigth{
-        font-size: 17px;
-    }
-
-    .textDark{
-        font-size: 17px;
-    }
-
+@media screen and (max-width: 1300px) {
+  .containerLight{
+    padding-top: 17%;
+}
+.dataContainer{
+  padding-left: 20%;
+  padding-right:20%;
+  padding-bottom: 5%;
+}
+  .titleLight{
+    font-size: 50px;
   }
+}
+
+@media screen and (max-width: 1100px) {
+  .containerLight{
+    padding-top: 18%;
+}
+.dataContainer{
+  padding-left: 20%;
+  padding-right:20%;
+  padding-bottom: 5%;
+}
+  .titleLight{
+    font-size: 45px;
+  }
+  .textLight{
+      font-size: 18px;
+  }
+}
+
+   @media screen and (max-width: 900px) {
+    .containerLight{
+      padding-top: 23%;
+  }
+  .dataContainer{
+    padding-left: 15%;
+    padding-right:15%;
+    padding-bottom: 2%;
+  }
+    .titleLight{
+      font-size: 35px;
+    }
+    .textLight{
+      padding-top: 3%;
+        font-size: 17px;
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    .containerLight{
+      padding-top: 27%;
+  }
+}
 
   @media screen and (max-width: 610px) {
-    .textLigth{
-        font-size: 15px;
+    .containerLight{
+      padding-top: 35%;
+  }
+  .dataContainer{
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 2%;
+  }
+  .titleLight{
+    font-size: 30px;
+  }
+    .textLight{
+      padding-top: 4%;
+        font-size: 17px;
     }
-
-    .textDark{
-        font-size: 15px;
-    }
-
   }
 
-  @media screen and (max-width: 460px) {
-    .textLigth{
-        font-size: 13px;
-    }
-
-    .textDark{
-        font-size: 13px;
-    }
-
+  @media screen and (max-width: 470px) {
     .containerLight{
-        background-color: #F2F2F2;
-        padding-top: 10%;
+      padding-top: 45%;
+  }
+    .dataContainer{
+      padding-left: 13%;
+      padding-right: 13%;
+      padding-bottom: 2%;
     }
-    
-    .containerDark{
-        background-color: #010D26;
-        padding-top: 10%;
+    .textLight{
+      padding-top: 6%;
+        font-size: 15px;
     }
+  }
 
+  @media screen and (max-width: 320px) {
+    .scrolldown{
+      display: none;
+    }
+    .containerLight{
+      padding-top: 55%;
+  }
+  .titleLight{
+    font-size: 25px;
+  }
+    .dataContainer{
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-bottom: 2%;
+    }
+    .textLight{
+      padding-top: 6%;
+        font-size: 15px;
+    }
   }
 
   .scrollPosition {

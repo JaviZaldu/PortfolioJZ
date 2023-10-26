@@ -3,6 +3,7 @@
     padding: 4% 0;
     text-align: center;
     width: 100vw;
+    margin-top: 5%;
   }
   
   .containerDark {
@@ -14,7 +15,6 @@
 
 .footerContent {
     display: flex;
-    align-items: center;
     max-width: 1500px;
     margin: 0 auto;
   }
@@ -53,6 +53,18 @@
     max-width: 400px;
   }
 
+  .redesContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    margin-right: 20px;
+  }
+  
+  .redesContainer a {
+    margin: 0 15px;
+  }
+
   .textContainer p {
     font-size: 14px;
     color: #c0c0c0;
@@ -61,4 +73,23 @@
   .textContainerDark p {
     font-size: 14px;
     color: #000000;
+  }
+
+
+  @media (min-width: 1600px) {
+    .redesContainer {
+      display: none;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .footerContent {
+      flex-direction: column; /* Cambiar a disposición en columna */
+    }
+  
+    .redesContainer {
+      order: -1; /* Reordena para que .redesContainer esté arriba */
+      margin-right: 0; /* Elimina el margen derecho */
+      margin-bottom: 20px; /* Agrega margen inferior entre .redesContainer y .aboutMeContainer */
+    }
   }
